@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("image/bggg.jpg") no-repeat center / cover fixed;
+    min-height: 100vh;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.Bar {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 20;
+}
+
+.Bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.Bar a {
+    color: rgb(145, 6, 157);
+    text-decoration: none;
+    text-shadow: 0 0 1px #f510b4;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    font-size: 23px;
+}
+
+.Bar a:hover {
+    color: #f10b48;
+    transform: scale(1.15);
+    opacity: 0.8;
+    transition: transform 5.0s, opacity 5.0;
+	display: inline-block;
+}
+
+.CA-LOGOO {
+    height: 70px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0;            
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px; 
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 50px;   
+    width: 100%;
+    justify-content: flex-end; 
+}
+
+
+footer a {
+    color: #bb00ff;
+    text-decoration: none;
+    
+}
+
+footer a:hover {
+    color: #f10b48;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+footer p {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 0; 
+    margin-right: auto; 
+    text-align: left;
+}
+
+
+
+
+
+.page-header {
+    text-align: center;
+    margin-bottom: -80px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-header p {
+    font-size: 18px;
+    color: #f1ecf3;
+    font-style: italic;
+}
+
+
+
+
+
+
+.resume-bg {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+   
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.resume-paper {
+    width: 100%;
+    max-width: 1100px;
+    padding: 50px;
+    border-radius: 40px; 
+    
+    background: linear-gradient(135deg, rgba(42, 0, 63, 0.85), rgba(26, 0, 31, 0.95));
+    
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+
+    border: 1px solid rgba(255, 0, 255, 0.3);
+    box-shadow: 0 0 50px rgba(121, 4, 109, 0.4);
+    overflow: hidden;
+}
+
+
+.profile-box img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid #ff00ff;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.6);
+}
+
+.profile-box h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #fff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+
+.info-box {
+    margin: 25px 0;
+    padding: 30px;
+    border-radius: 30px; 
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.info-box:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 0, 255, 0.5);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.info-box h2 {
+    font-size: 22px;
+    color: #ff00f2; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.info-box h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #00f2ff, #ff00ff);
+    border-radius: 10px;
+}
+
+
+.card {
+    padding: 15px;
+    border-radius: 18px;
+    background: rgba(0, 242, 255, 0.05); /* Very slight cyan tint */
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    color: #f1f1f1;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    background: rgba(0, 242, 255, 0.2);
+    border-color: #00f2ff;
+    color: #fff;
+}
+
+
+
+.title {
+    color: #ffffff; 
+    font-size: 16px; 
+    font-weight: 300; 
+    letter-spacing: 3px; 
+    text-transform: uppercase;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+
+
+.info-box p {
+    color: #ffffff;      
+    font-size: 15px;     
+    line-height: 1.6;   
+    font-weight: 400;    
+    text-align: justify; 
+    margin-top: 10px;    
+    opacity: 0.95;       
+}
